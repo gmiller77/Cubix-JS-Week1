@@ -19,6 +19,7 @@ body {
 .task {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   margin-bottom: 10px;
 }
 
@@ -49,7 +50,14 @@ body {
 }
 
 /* Gombok stílusok */
-button {
+.button-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Új stílusok a "Törlés" gombokhoz */
+.delete-button {
   background-color: #d9534f;
   color: white;
   border: none;
@@ -57,9 +65,8 @@ button {
   padding: 5px 10px;
   cursor: pointer;
   font-size: 14px;
-  margin-left: 5px;
 }
 
-button:hover {
+.delete-button:hover {
   background-color: #c9302c;
 }

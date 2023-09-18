@@ -9,13 +9,15 @@
 <body>
     <div id="todo-container">
         <h1>Todo Lista</h1>
-        <input type="checkbox" id="select-all-checkbox"> Összes kijelölése
-        <button id="delete-selected-button">Kijelöltek törlése</button>
+        <div class="button-container">
+            <input type="checkbox" id="select-all-checkbox"> Összes kijelölése
+            <button id="delete-selected-button">Kijelöltek törlése</button>
+        </div>
         <ul id="todo-list">
             <!-- Todo feladatok ide lesznek beszúrva JavaScript segítségével -->
         </ul>
         <div id="progress">Elvégzés: 0%</div>
-        <input type="text" id="new-task" placeholder="Új feladat hozzáadása">        
+        <input type="text" id="new-task" placeholder="Új feladat hozzáadása">
     </div>
     <script src="script.js"></script>
 </body>
