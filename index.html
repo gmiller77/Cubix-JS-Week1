@@ -1,20 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Todo Lista</title>
-    <link rel="stylesheet" type="text/css" href="styles.css" />
-  </head>
-  <body>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
     <div id="todo-container">
-      <h1>TODO list</h1>
-      <ul id="todo-list">
-        <!-- Todo feladatok ide lesznek beszúrva JavaScript segítségével -->
-      </ul>
-      <div id="progress">Progress: 0%</div>
-      <input type="text" id="new-task" placeholder="Add new TODO item" />
+        <h1>Todo Lista</h1>
+        <input type="checkbox" id="select-all-checkbox"> Összes kijelölése
+        <button id="delete-selected-button">Kijelöltek törlése</button>
+        <ul id="todo-list">
+            <!-- Todo feladatok ide lesznek beszúrva JavaScript segítségével -->
+        </ul>
+        <div id="progress">Elvégzés: 0%</div>
+        <input type="text" id="new-task" placeholder="Új feladat hozzáadása">        
     </div>
     <script src="script.js"></script>
-  </body>
+</body>
 </html>

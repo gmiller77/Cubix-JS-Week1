@@ -1,35 +1,65 @@
+/* Általános stílusok */
 body {
   font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
   background-color: #f0f0f0;
 }
 
 #todo-container {
   max-width: 400px;
   margin: 0 auto;
-  background-color: white;
+  background-color: #fff;
   padding: 20px;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+/* Lista stílusok */
 .task {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 5px;
-  margin: 5px 0;
-  border-bottom: 1px solid #ccc;
+  margin-bottom: 10px;
 }
 
 .task input[type="checkbox"] {
   margin-right: 10px;
+  /* Sárga checkbox */
+  border: 2px solid #ffc107;
+  border-radius: 4px;
+  width: 20px;
+  height: 20px;
 }
 
-.task.completed {
-  text-decoration: line-through;
-  color: #888;
+.task input[type="checkbox"]:checked {
+  /* Sárga checkbox kijelölés esetén */
+  background-color: #ffc107;
 }
 
-#progress {
-  margin-top: 10px;
+.task.completed input[type="checkbox"] {
+  /* Áthúzott checkbox színe */
+  background-color: transparent;
+  border-color: #ccc;
+  color: #ccc; /* A checkbox színét szürkére állítjuk áthúzás esetén */
+}
+
+.task label {
+  /* Betű áthúzása eltávolítva */
+  text-decoration: none !important;
+}
+
+/* Gombok stílusok */
+button {
+  background-color: #d9534f;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-left: 5px;
+}
+
+button:hover {
+  background-color: #c9302c;
 }
