@@ -1,0 +1,35 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+
+#todo-container {
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.task {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  margin: 5px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.task input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.task.completed {
+  text-decoration: line-through;
+  color: #888;
+}
+
+#progress {
+  margin-top: 10px;
+}
